@@ -9,63 +9,80 @@
 
     <link rel="stylesheet" href="/unit-4-game/assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    <script type="text/javascript">
-
-    </script>
 
 </head>
 
 <body>
 
-    <br>
+
     <div id=intructions>
-        <p>
+        <h1>Instructions</h1>
+        <p class=intro-text>
             You will be given a random number at the start of the game.
         </p>
-        <br>
-        <p>There will be four crystals below. By clicking on the
+
+        <p class=intro-text>There will be four crystals below. By clicking on the
             crystal you will add a specific amount of points to
             your total score
         </p>
-        <br>
-        <p>
+
+        <p class=intro-text>
             You win the game by matching your total score
             to the random number, you lose the game if your total score
             goes above the random number.
         </p>
-        <p>
+
+        <p class=intro-text>
             The value of each crystal will be hidden until you click on it.
         </p>
-        <br>
-        <p>
+
+        <p class=intro-text>
             Each time when the game starts, the game will cahnge the value of each crystal.
 
         </p>
     </div>
-    <div class=val-box>
+
+    <div class="random-number" id="randNum">0</div>
         <!-- // filler here -->
     </div>
-    <div class=score-keeper>
+    <br>
+
+    <div class=score-keeper id="score">
+        this is the score
         <!--score's for wins and losses here-->
     </div>
 
-    <div id=crystal-images>
-        <img id=Alex src="./assets/images/Alexandrite.png" width="90" height="90">
-        <img id=diamond src="assets/images/Diamond.jpg" width="90" height="90">
-        <img id=ruby src="assets/images/Ruby.jpg" width="90" height="90">
-        <img id=sapphire src="assets/images/sapphire.jpg" width="90" height="90">
+    <br>
+
+    <div class=gem-images id="gemsArr">
+        <button id="alex"> <img src="./assets/images/Alexandrite.png" width="90" height="90">
+        <button id="diamond"> <img src="assets/images/Diamond.jpg" width="90" height="90">
+        <button id="ruby"> <img src="assets/images/Ruby.jpg" width="90" height="90">
+        <button id="sapphire"> <img id=sapphire src="assets/images/sapphire.jpg" width="90" height="90">
     </div>
 
-<br>
-<div class=score-current>
-    <p id=total>Your current score is:</p>
-</div>
-<br>
-<div class=score-current>
-    <p id=number-current>
-        0
-    </p>
-</div>
+    <br>
+
+    <div id="randomNumber"></div>
+
+
+    <div class=score-current>
+        <p>Wins</p>
+        <p id="wins">0</p>
+        <p>Loss</p>
+        <p id="loss">0</p>
+    </div>
+
+    <br>
+
+    <div class=score-current>
+        <p id=number-current>
+            0
+        </p>
+    </div>
+
+    <footer>John Paul</footer>
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
 </body>
 
 </html>
