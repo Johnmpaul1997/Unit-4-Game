@@ -34,19 +34,19 @@ function lose() {
     reset();
 }
 
-$('#alex').click((){
-score = score + alex
-$("#currScore").text(score);
-if(score === randNum){
-    win();
-    reset();
-}
-else if (score > randNum){
-    lose();
-    reset();
-}
+// $('#alex').click((){
+// score = score + alex
+// $("#score").text(score);
+// if(score === randNum){
+//     win();
+//     reset();
+// }
+// else if (score > randNum){
+//     lose();
+//     reset();
+// }
 
-});
+// });
    
 //cant figure how to make the buttons add to my score. 
 //whenever i try it always pops up as a syntax error.
